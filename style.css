@@ -1,0 +1,131 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+*{
+font-family: 'Kumbh Sans';
+box-sizing: border-box;
+}
+body
+{   width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('images/bg-pattern-top.svg');
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+    background-size: 900px 900px;
+    background-position: -60% -450px;
+}
+#svg
+{
+    z-index:-1;
+    position:absolute;
+    width:50%;
+    height:300px;
+    bottom:0;
+    right:0;
+}
+#main-container
+{   position:relative;
+    /* border:1px solid black; */
+    width:400px;
+    height:450px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:4px 4px 20px 12px hsl(185, 75%, 39%);
+
+}
+.box
+{   position: relative;
+    flex: 1;
+    /* border:1px solid black; */
+    
+}
+#image
+ {  width:100%;
+    height:100%;
+    background-image: url('images/bg-pattern-card.svg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#profile
+{   position:absolute;
+    width:90px;
+    height:90px;
+    background-image: url('images/image-victor.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:5px solid white;
+    border-radius:50%;
+    top:100%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+    z-index:2;
+    
+}
+#middle,#bottom-text
+{
+    background-color:white;
+}
+#middle
+{
+    text-align:center;
+    padding-top:70px;
+}
+#middle span
+{
+    font-size: 18px;
+    font-weight:700;
+}
+#bottom-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top:1px solid hsl(0, 0%, 59%);
+}
+.stats
+{
+    flex:1;
+    /* border:1px solid black; */
+}
+#age
+{   
+    display:inline;
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+p{
+    color:hsl(0, 0%, 59%);
+}
+@media screen and (max-width:450px)
+ {
+    body,html{
+       width:100%;
+       background-image: url('images/bg-pattern-top.svg');
+       background-repeat: no-repeat;
+       background-size: 120% 70%;
+       background-position: 250% -50%;
+    }
+    #main-container
+    {
+        width:85%;
+    }
+    #svg{
+      z-index:0;
+      position:absolute;
+      width:70%;
+      height:40%;
+      bottom:0;
+      right:0;
+    }
+
+    
+}
